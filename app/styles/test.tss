@@ -24,13 +24,35 @@
 	borderRadius : 7
 },
 
-".configButton" : {
+".configButton[formFactor=handheld]" : {
     top: "5dp",
     width: '280dp',
-    height: '25dp',
+    height: '30dp',
     borderRadius : 4,    
-    borderColor : 'blue',
-    color : "#b6b6b6"
+    backgroundColor : '#b6b6b6',
+    color : "#000",
+    font : {
+        fontFamily : 'Helvetica',
+        fontWeight : 'bold',
+        fontSize : '10dp',
+		fontStyle : 'normal'
+   },
+    
+},
+
+".configButton[formFactor=tablet]" : {
+    top: "5dp",
+    width: '280dp',
+    height: '35dp',
+    borderRadius : 4,    
+    backgroundColor : '#b6b6b6',
+    color : "#000",
+    font : {
+        fontFamily : 'Helvetica',
+        fontWeight : 'bold',
+        fontSize : '18dp',
+		fontStyle : 'normal'
+   },
     
 },
 

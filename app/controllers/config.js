@@ -9,7 +9,7 @@ function handleLoadAd(adType) {
 	Ti.API.info("handleLoadAd");
 	
 	// initialize the adunit and user role
-	AdFactory.setAdUnit($.adunit.value.toLowerCase());
+	AdFactory.setAdUnit($.adunit.value);
 	AdFactory.setUserRole($.userRole.value.toUpperCase());
 	
 	var extras = {};
@@ -48,7 +48,7 @@ function handleLoadInterstitial() {
 	    scrollPosition : $.scrollposition.value,
 	    extras : extras,
 		error : function(e) {
-	        Ti.API.info("Could not fetch advert: " + e.error);
+	        Ti.API.info("Could not fetch advert: " + JSON.stringify(e));
 	    }
 	});
 }
@@ -66,7 +66,7 @@ function firstLoadInterstitial() {
 	    startup : true,
 	    sectionTargeting : false,
 	    error : function(e) {
-	        Ti.API.info("Could not fetch advert: " + e.error);
+	        Ti.API.info("Could not fetch advert: " + JSON.stringify(e));
 	    }
 	});
 }

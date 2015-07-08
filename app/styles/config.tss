@@ -36,6 +36,18 @@
    color : '#000'
 },
 
+".divider_horiz" : {
+	backgroundColor : "#cccccc", 
+	width : Ti.UI.FILL, 
+	height : "1"
+},
+
+".divider_vert" : {
+	backgroundColor : "#cccccc", 
+	height : "45dp", 
+	width : "1"
+},
+
 "#config_fields" : {
 	top : "10dp", 
 	height : Ti.UI.SIZE,
@@ -49,14 +61,18 @@
 },
 
 ".configLabel" : {
-	color : '#000'
+	left : '5dp',
+	right : '5dp',
+	color : '#000',
+	width: '45%',
+	textAlign : Ti.UI.TEXT_ALIGNMENT_RIGHT
 },
 
 "#adunit" : {
 	left : '5dp',
     right : '5dp',
     height: '45dp',
-    width: '90%',
+    width: '45%',
     borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE,
     textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
     font : {
@@ -78,7 +94,7 @@
 	left : '5dp',
     right : '5dp',
     height: '45dp',
-    width: '90%',
+    width: '45%',
     borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE,
     textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
     font : {
@@ -100,7 +116,7 @@
 	left : '5dp',
     right : '5dp',
     height: '45dp',
-    width: '90%',
+    width: '45%',
     borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE,
     textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
     font : {
@@ -122,7 +138,7 @@
 	left : '5dp',
 	right : '5dp',
     height: '45dp',
-    width: '90%',
+    width: '45%',
     borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE,
     textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
     font : {
@@ -132,7 +148,6 @@
 		fontStyle : 'normal'
     },
     value : 'Show News',
-    width : '100%',
     color : '#000',
     autocorrect : false,
     clearOnEdit : false,
@@ -140,7 +155,7 @@
 	//borderColor : 'brown'
 },
 
-"#keyValueView" : {
+".keyValueView" : {
 	height : Titanium.UI.SIZE,
 	layout : "horizontal"
 },

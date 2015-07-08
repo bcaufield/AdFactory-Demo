@@ -5,27 +5,45 @@
 		      	<Label id="headerLabel" />
 		    </View>
 			<View id="config_fields">
-				<Label id="adunitLabel" text="adUnit" class="configLabel"/>
-				<TextField id="adunit" next="userRole" />
-				<View backgroundColor="#cccccc" width="Ti.UI.FILL" height="1"/>
-				<Label id="userRoleLabel" text="userRole" class="configLabel"/>
-				<TextField id="userRole" next="scrollposition"/>
-				<View backgroundColor="#cccccc" width="Ti.UI.FILL" height="1"/>
-				<Label id="scrollpositionLabel" text="scrollposition" class="configLabel"/>
-				<TextField id="scrollposition" next="targetsection"/>
-				<View backgroundColor="#cccccc" width="Ti.UI.FILL" height="1"/>
-				<Label id="targetSectionLabel" text="Target Section" class="configLabel"/>
-				<Switch id="targetsection" value="true" title="Target Section" />
-				<View backgroundColor="#cccccc" width="Ti.UI.FILL" height="1"/>
-				<Label id="targetLabel" text="target" class="configLabel"/>
-				<TextField id="target" />
-				<View backgroundColor="#cccccc" width="Ti.UI.FILL" height="1"/>
-				<Label id="keyValueLabel" text="Use Key:Value" class="configLabel"/>
-				<Switch id="useKeyValue" value="false" title="Use Key:Value" bottom="2dp"/>
-				<View backgroundColor="#cccccc" width="Ti.UI.FILL" height="1"/>
-				<View id="keyValueView">
+				<View class="keyValueView" >
+					<Label id="adunitLabel" text="adUnit" class="configLabel"/>
+					<View class="divider_vert" />
+					<TextField id="adunit" next="userRole" />
+				</View>
+				<View class="divider_horiz"/>
+				<View class="keyValueView" >
+					<Label id="userRoleLabel" text="userRole" class="configLabel"/>
+					<View class="divider_vert"/>
+					<TextField id="userRole" next="scrollposition"/>					
+				</View>			
+				<View class="divider_horiz"/>
+				<View class="keyValueView" >
+					<Label id="scrollpositionLabel" text="scrollposition" class="configLabel"/>
+					<View class="divider_vert"/>
+					<TextField id="scrollposition" next="targetsection"/>					
+				</View>
+				<View class="divider_horiz"/>
+				<View class="keyValueView" >
+					<Label id="targetSectionLabel" text="Target Section" class="configLabel"/>
+					<View class="divider_vert"/>
+					<Switch id="targetsection" value="true" title="Target Section" left="5dp"/>					
+				</View>
+				<View class="divider_horiz"/>
+				<View class="keyValueView" >
+					<Label id="targetLabel" text="target" class="configLabel"/>
+					<View class="divider_vert"/>
+					<TextField id="target" />					
+				</View>
+				<View class="divider_horiz"/>
+				<View class="keyValueView" >
+					<Label id="keyValueLabel" text="Use Key:Value" class="configLabel"/>
+					<View class="divider_vert"/>
+					<Switch id="useKeyValue" value="false" title="Use Key:Value" left="5dp"/>					
+				</View>
+				<View class="divider_horiz"/>
+				<View class="keyValueView" >
 					<TextField id="key" />
-					<View backgroundColor="#cccccc" height="45dp" width="1"/>
+					<View class="divider_vert"/>
 					<TextField id="value" />
 				</View>			
 			</View>

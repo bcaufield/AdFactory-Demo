@@ -64,6 +64,9 @@ exports.setUserRole = function(userRole) {
 exports.createAd = function(options) {
 	ad = null;
     var adUnit = setAdUnit(options);
+    if (!options.extras) {
+		options.extras = {};
+	}
 	var extras = setExtras(options);
 	switch(options.adType) {
         case adTypes.BANNER_HANDHELD:
@@ -215,8 +218,12 @@ exports.createInterstitial = function(options) {
     var ad = null;
     var errorCallback = options.error;
     var isPortrtait = true;
-    var extras = setExtras(options);
     var adUnit = setAdUnit(options);
+    if (!options.extras) {
+		options.extras = {};
+	}
+    var extras = setExtras(options);
+    
     
     /**
      * We are only supporting the portrait version of the ad for now
@@ -381,7 +388,7 @@ setExtras = function(options) {
 	var extras = {};
 	
 	// check to see if we have been handed extras
-	if (options.extras.length) {
+	if (_.isEmpty(options.extras) === false) {
 		Ti.API.info("using passed in extras");		
 		extras = options.extras;
 	} else {
