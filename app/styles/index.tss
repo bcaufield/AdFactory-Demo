@@ -1,0 +1,10 @@
+"TabGroup": {
+	backgroundColor:"white"
+},
+
+"#config": {
+    title: "Config"
+},
+"#test": {
+    title: "Test"
+},

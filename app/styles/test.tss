@@ -1,0 +1,60 @@
+".container": {
+	backgroundColor:"white",
+	height : Ti.UI.FILL
+}
+
+"#testContainer" : {
+	layout : "vertical",
+	height : Ti.UI.FILL
+}
+"#buttonForm[formFactor=handheld]" : {
+	top : '10dp',
+	height : Ti.UI.SIZE,
+	width : '320dp',
+	layout : 'vertical',
+	backgroundColor : "#ffffff",
+	borderRadius : 7
+},
+"#buttonForm[formFactor=tablet]" : {
+	top : '25%',
+	height : Ti.UI.SIZE,
+	width : '320dp',
+	layout : 'vertical',
+	backgroundColor : "#ffffff",
+	borderRadius : 7
+},
+
+".configButton" : {
+    top: "5dp",
+    width: '280dp',
+    height: '25dp',
+    borderRadius : 4,    
+    borderColor : 'blue',
+    color : "#b6b6b6"
+    
+},
+
+"#adContainer[formFactor=handheld]": {
+	bottom : 0,
+	width : Ti.UI.FILL,
+	height : "50dp",
+	borderColor : "red"
+}
+"#adContainer[formFactor=tablet]": {
+	bottom : 0,
+	width : Ti.UI.FILL,
+	height : "90dp",
+	borderColor : "red"
+}
+"#logoContainer": {
+	top : 0,
+	width : "120dp",
+	height : "50dp",
+	borderColor : "blue"
+}
+"#blockContainer": {
+	top : 0,
+	width : "300dp",
+	height : "250dp",
+	borderColor : "green"
+}

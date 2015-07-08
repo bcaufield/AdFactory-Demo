@@ -1,0 +1,34 @@
+<Alloy>
+	<Window class="container">
+		<View id="configForm">
+			<View id="header" formFactor="tablet">
+		      	<Label id="headerLabel" />
+		    </View>
+			<View id="config_fields">
+				<Label id="adunitLabel" text="adUnit" class="configLabel"/>
+				<TextField id="adunit" next="userRole" />
+				<View backgroundColor="#cccccc" width="Ti.UI.FILL" height="1"/>
+				<Label id="userRoleLabel" text="userRole" class="configLabel"/>
+				<TextField id="userRole" next="scrollposition"/>
+				<View backgroundColor="#cccccc" width="Ti.UI.FILL" height="1"/>
+				<Label id="scrollpositionLabel" text="scrollposition" class="configLabel"/>
+				<TextField id="scrollposition" next="targetsection"/>
+				<View backgroundColor="#cccccc" width="Ti.UI.FILL" height="1"/>
+				<Label id="targetSectionLabel" text="Target Section" class="configLabel"/>
+				<Switch id="targetsection" value="true" title="Target Section" />
+				<View backgroundColor="#cccccc" width="Ti.UI.FILL" height="1"/>
+				<Label id="targetLabel" text="target" class="configLabel"/>
+				<TextField id="target" />
+				<View backgroundColor="#cccccc" width="Ti.UI.FILL" height="1"/>
+				<Label id="keyValueLabel" text="Use Key:Value" class="configLabel"/>
+				<Switch id="useKeyValue" value="false" title="Use Key:Value" bottom="2dp"/>
+				<View backgroundColor="#cccccc" width="Ti.UI.FILL" height="1"/>
+				<View id="keyValueView">
+					<TextField id="key" />
+					<View backgroundColor="#cccccc" height="45dp" width="1"/>
+					<TextField id="value" />
+				</View>			
+			</View>
+		</View>		
+	</Window>
+</Alloy>

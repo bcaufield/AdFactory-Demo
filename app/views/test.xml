@@ -1,0 +1,16 @@
+<Alloy>
+	<Window class="container">
+		<ScrollView id="testContainer">
+			<View id="buttonForm">
+				<Button id="loadInterstitial" title="loadInterstitial" class="configButton" onClick="handleLoadInterstitial"></Button>
+				<Button id="showInterstitial" title="showInterstitial" class="configButton" onClick="handleShowInterstitial"></Button>
+				<Button id="loadLogo" title="loadLogo" class="configButton" onClick="handleLoadLogo"></Button>
+				<Button id="loadBlock" title="loadBlock" class="configButton" onClick="handleLoadBlock"></Button>
+				<Button id="loadBanner" title="loadBanner" class="configButton" onClick="handleLoadBanner"></Button>				
+			</View>
+			<View id="logoContainer"></View>
+			<View id="blockContainer"></View>
+			<View id="adContainer"></View>
+		</ScrollView>
+	</Window>
+</Alloy>

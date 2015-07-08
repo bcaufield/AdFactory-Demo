@@ -1,0 +1,191 @@
+".container": {
+	backgroundColor:"white"
+}
+
+"#configForm[formFactor=handheld]" : {
+	top : '10dp',
+	height : Ti.UI.SIZE,
+	width : '320dp',
+	layout : 'vertical',
+	backgroundColor : "#ffffff",
+	borderRadius : 7
+},
+"#configForm[formFactor=tablet]" : {
+	top : '25%',
+	height : Ti.UI.SIZE,
+	width : '320dp',
+	layout : 'vertical',
+	backgroundColor : "#ffffff",
+	borderRadius : 7
+},
+"#header": {
+	top : 0,
+  	height : '45dp',
+  	width : '320dp',
+},
+"#headerLabel": {
+	width: '280dp',
+	height: '20dp',
+	text : "Enter Ad Config info",
+	font : {
+        fontFamily : 'Helvetica',
+        fontWeight : 'bold',
+        fontSize : '20dp',
+		fontStyle : 'normal'
+   },
+   color : '#000'
+},
+
+"#config_fields" : {
+	top : "10dp", 
+	height : Ti.UI.SIZE,
+	width : "280dp",
+	layout : "vertical",
+	backgroundColor : '#f0f0f0',
+	borderColor : "#b6b6b6", 
+	borderRadius : "7", 
+	borderWidth : "1",
+	//borderColor : 'purple'
+},
+
+".configLabel" : {
+	color : '#000'
+},
+
+"#adunit" : {
+	left : '5dp',
+    right : '5dp',
+    height: '45dp',
+    width: '90%',
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE,
+    textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font : {
+        fontFamily : 'Helvetica',
+        fontWeight : 'bold',
+        fontSize : '14dp',
+		fontStyle : 'normal'
+    },
+    value : '/3834/m.app.aviationweek_2.home',
+    color : '#000',
+    autocorrect : false,
+    clearOnEdit : false,
+    returnKeyType : Ti.UI.RETURNKEY_NEXT,
+    autocapitalization : Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE
+	//borderColor : 'orange'
+},
+ 
+"#userRole" : {
+	left : '5dp',
+    right : '5dp',
+    height: '45dp',
+    width: '90%',
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE,
+    textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font : {
+        fontFamily : 'Helvetica',
+        fontWeight : 'bold',
+        fontSize : '18dp',
+		fontStyle : 'normal'
+    },
+    value : 'AWST',
+    color : '#000',
+    autocorrect : false,
+    clearOnEdit : false,
+    keyboardType : Ti.UI.KEYBOARD_EMAIL,
+    returnKeyType : Ti.UI.RETURNKEY_NEXT,
+    autocapitalization : Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE
+},
+
+"#scrollposition" : {
+	left : '5dp',
+    right : '5dp',
+    height: '45dp',
+    width: '90%',
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE,
+    textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font : {
+        fontFamily : 'Helvetica',
+        fontWeight : 'bold',
+        fontSize : '18dp',
+		fontStyle : 'normal'
+    },
+    value : '0',
+    color : '#000',
+    autocorrect : false,
+    clearOnEdit : false,
+    keyboardType : Ti.UI.KEYBOARD_EMAIL,
+    returnKeyType : Ti.UI.RETURNKEY_NEXT,
+    autocapitalization : Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE
+},
+
+"#target" : {
+	left : '5dp',
+	right : '5dp',
+    height: '45dp',
+    width: '90%',
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE,
+    textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font : {
+        fontFamily : 'Helvetica',
+        fontWeight : 'bold',
+        fontSize : '18dp',
+		fontStyle : 'normal'
+    },
+    value : 'Show News',
+    width : '100%',
+    color : '#000',
+    autocorrect : false,
+    clearOnEdit : false,
+    returnKeyType : Ti.UI.RETURNKEY_GO
+	//borderColor : 'brown'
+},
+
+"#keyValueView" : {
+	height : Titanium.UI.SIZE,
+	layout : "horizontal"
+},
+
+"#key" : {
+	left : '5dp',
+	right : '5dp',
+    height: '45dp',
+    width: '45%',
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE,
+    textAlign : Ti.UI.TEXT_ALIGNMENT_RIGHT,
+    font : {
+        fontFamily : 'Helvetica',
+        fontWeight : 'bold',
+        fontSize : '18dp',
+		fontStyle : 'normal'
+    },
+    value : 'pos',
+    color : '#000',
+    autocorrect : false,
+    clearOnEdit : false,
+    returnKeyType : Ti.UI.RETURNKEY_GO,
+	//borderColor : 'brown'
+},
+"#value" : {
+	left : '5dp',
+	right : '5dp',
+    height: '45dp',
+    width: '45%',
+    borderStyle: Ti.UI.INPUT_BORDERSTYLE_NONE,
+    textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
+    font : {
+        fontFamily : 'Helvetica',
+        fontWeight : 'bold',
+        fontSize : '18dp',
+		fontStyle : 'normal'
+    },
+    value : 'app-load',
+    color : '#000',
+    autocorrect : false,
+    clearOnEdit : false,
+    returnKeyType : Ti.UI.RETURNKEY_GO,
+	//borderColor : 'green'
+},
+
+
+
+

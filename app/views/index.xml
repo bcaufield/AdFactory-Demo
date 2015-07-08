@@ -1,0 +1,10 @@
+<Alloy>
+	<TabGroup id="index">
+		<Tab id="config" activeTab="true">
+			<Require src="config" />
+		</Tab>
+		<Tab id="test">
+			<Require src="test" />
+		</Tab>
+	</TabGroup>
+</Alloy>
