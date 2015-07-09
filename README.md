@@ -80,6 +80,7 @@ Then after the user scrolls the required number of times the app would call to s
     });
 
 EXTRAS
+
 The extras feature allows an ad to be targeted by a key:value pair. A working example is 
 
     AdFactory.setAdUnit(“/6236286/DFP-mode”);
